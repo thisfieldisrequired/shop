@@ -10,6 +10,7 @@ python = "^3.11"
 django = "^4.2.2"
 pillow = "^9.5.0"
 celery = "5.2.7"
+flower = "^2.0.0"
 
 
 [build-system]

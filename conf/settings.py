@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-kkd%muvrzni)#3ecs87*ha3i=6p7psaw(jt+e9t^awg7^r$n)4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -125,3 +125,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
