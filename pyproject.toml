@@ -12,6 +12,7 @@ pillow = "^9.5.0"
 celery = "5.2.7"
 flower = "^2.0.0"
 stripe = "^5.4.0"
+weasyprint = "^59.0"
 
 
 [build-system]
