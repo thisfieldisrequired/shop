@@ -6,14 +6,19 @@ authors = ["sudodebug <sudodebug@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 django = "^4.2.2"
 pillow = "^9.5.0"
 celery = "5.2.7"
 flower = "^2.0.0"
 stripe = "^5.4.0"
 weasyprint = "^59.0"
+webencodings = "^0.5.1"
+setuptools = "^68.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^68.0.0"
 
 [build-system]
 requires = ["poetry-core"]
