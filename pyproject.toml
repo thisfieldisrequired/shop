@@ -15,6 +15,7 @@ stripe = "^5.4.0"
 weasyprint = "^59.0"
 webencodings = "^0.5.1"
 setuptools = "^68.0.0"
+redis = "^4.6.0"
 
 
 [tool.poetry.group.dev.dependencies]
