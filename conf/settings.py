@@ -132,6 +132,9 @@ CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
 
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51NKFBOJx1pfaaDbqb5qq3ExlKAvwMtRoVrAqnei2zxvQVdJ79SjsuNVAiip7VhVjzKGsbBZYftmRfFdK9O53zYMv00jy7FTgWr'
 STRIPE_SECRET_KEY = 'sk_test_51NKFBOJx1pfaaDbqqIjUbwjxTUHblWMVen54UlUgksuYhSxRwgTkJ6U4BPirHYc30tiE4qZUJN0X5hlTvkahD5Ze00Jl4h9kGP'
