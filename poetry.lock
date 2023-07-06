@@ -523,6 +523,22 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-rosetta"
+version = "0.9.9"
+description = "A Django application that eases the translation of Django projects"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-rosetta-0.9.9.tar.gz", hash = "sha256:776ac03f43974ea780ca25e7d805862b06c8ede4698f999c771a5ed78da4b87f"},
+    {file = "django_rosetta-0.9.9-py3-none-any.whl", hash = "sha256:269d9ce7e9972002ac216e7bca33b4d9f578bd38b6043d98e28c9b69c04c1f59"},
+]
+
+[package.dependencies]
+Django = ">=2.2"
+polib = ">=1.1.0"
+requests = ">=2.1.0"
+
+[[package]]
 name = "flower"
 version = "2.0.0"
 description = "Celery Flower"
@@ -758,6 +774,17 @@ files = [
 [package.extras]
 docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline-tabs", "sphinx-removed-in", "sphinxext-opengraph"]
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "polib"
+version = "1.2.0"
+description = "A library to manipulate gettext files (po and mo files)."
+optional = false
+python-versions = "*"
+files = [
+    {file = "polib-1.2.0-py2.py3-none-any.whl", hash = "sha256:1c77ee1b81feb31df9bca258cbc58db1bbb32d10214b173882452c73af06d62d"},
+    {file = "polib-1.2.0.tar.gz", hash = "sha256:f3ef94aefed6e183e342a8a269ae1fc4742ba193186ad76f175938621dbfc26b"},
+]
 
 [[package]]
 name = "prometheus-client"
@@ -1147,4 +1174,4 @@ test = ["pytest"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5f297d66c8eef398b367de7f2cbb9a1d5b02b12a55218ec35112315ed9084e58"
+content-hash = "a5222eaafe999557ad6f29fa131e8be14cecb2167e5126eba66c3d54de4635c4"
