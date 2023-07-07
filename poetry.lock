@@ -523,6 +523,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-parler"
+version = "2.3"
+description = "Simple Django model translations without nasty hacks, featuring nice admin integration."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-parler-2.3.tar.gz", hash = "sha256:2c8f5012ceb5e49af93b16ea3fe4d0c83d70b91b2d0f470c05d7d742b6f3083d"},
+    {file = "django_parler-2.3-py3-none-any.whl", hash = "sha256:8f6c8061e4b5690f1ee2d8e5760940ef06bf78a5bfa033d11178377559c749cf"},
+]
+
+[package.dependencies]
+Django = ">=2.2"
+
+[[package]]
 name = "django-rosetta"
 version = "0.9.9"
 description = "A Django application that eases the translation of Django projects"
@@ -1174,4 +1188,4 @@ test = ["pytest"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "a5222eaafe999557ad6f29fa131e8be14cecb2167e5126eba66c3d54de4635c4"
+content-hash = "958db3cf54ea07ef4df359e539d28e7567950c574d9d697d72bc47b94493b7aa"
