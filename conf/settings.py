@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rosetta',
     'parler',
 
+    'localflavor',
+
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',

@@ -18,6 +18,7 @@ setuptools = "^68.0.0"
 redis = "^4.6.0"
 django-rosetta = "^0.9.9"
 django-parler = "^2.3"
+django-localflavor = "^4.0"
 
 
 [tool.poetry.group.dev.dependencies]
