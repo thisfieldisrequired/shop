@@ -19,6 +19,8 @@ redis = "^4.6.0"
 django-rosetta = "^0.9.9"
 django-parler = "^2.3"
 django-localflavor = "^4.0"
+flake8 = "^6.1.0"
+black = "^23.9.1"
 
 
 [tool.poetry.group.dev.dependencies]

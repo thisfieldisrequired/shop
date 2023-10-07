@@ -5,17 +5,21 @@ from parler.admin import TranslatableAdmin
 
 @admin.register(Category)
 class CategoryAdmin(TranslatableAdmin):
-    list_display = ['name', 'slug']
+    """Регистрация категорий в админ панеле"""
+
+    list_display = ["name", "slug"]
 
     def get_prepopulated_fields(self, request, obj=None):
-        return {'slug': ('name',)}
+        return {"slug": ("name",)}
+
 
 @admin.register(Product)
 class ProductAdmin(TranslatableAdmin):
-    list_display = ['name', 'slug', 'price',
-                    'available', 'created', 'updated']
-    list_filter = ['available', 'created', 'updated']
-    list_editable = ['price', 'available']
+    """Регистрация продуктов в админ панеле"""
+
+    list_display = ["name", "slug", "price", "available", "created", "updated"]
+    list_filter = ["available", "created", "updated"]
+    list_editable = ["price", "available"]
 
     def get_prepopulated_fields(self, request, obj=None):
-        return {'slug': ('name',)}
+        return {"slug": ("name",)}

@@ -9,13 +9,14 @@ from orders.models import Order
 
 @shared_task
 def payment_completed(order_id):
+    """Отправка уведомления на почту при успешной оплате заказа"""
     order = Order.objects.get(id=order_id)
-    subject = f'Shop - Invoice no. {order.id}'
-    message = f'Info at attache'
-    email = EmailMessage(subject, message, 'admin@admin.admin', [order.email])
-    html = render_to_string('orders/order/pdf.html', {'order': order})
+    subject = f"Shop - Invoice no. {order.id}"
+    message = f"Info at attache"
+    email = EmailMessage(subject, message, "admin@admin.admin", [order.email])
+    html = render_to_string("orders/order/pdf.html", {"order": order})
     out = BytesIO()
-    stylesheets = [weasyprint.CSS(settings.STATIC_ROOT / 'css/pdf.css')]
+    stylesheets = [weasyprint.CSS(settings.STATIC_ROOT / "css/pdf.css")]
     weasyprint.HTML(string=html).write_pdf(out, stylesheets=stylesheets)
-    email.attach(f'order_{order.id}.pdf', out.getvalue(), 'application/pdf')
+    email.attach(f"order_{order.id}.pdf", out.getvalue(), "application/pdf")
     email.send()

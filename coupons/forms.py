@@ -3,4 +3,6 @@ from django.utils.translation import gettext_lazy as _
 
 
 class CouponApplyForm(forms.Form):
-    code = forms.CharField(label=_('Coupon'))
+    """Форма для ввода пользователем купона"""
+
+    code = forms.CharField(label=_("Coupon"))
